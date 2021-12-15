@@ -1,0 +1,316 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  height: 80px;
+  background: var(--color-bg);
+
+  box-shadow: 0 4px 2px -2px rgba(17, 22, 77, 0.657);
+}
+.navbarLinks {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbarLogo {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.navbarLogo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--color-footer);
+  transition: transform 200ms linear;
+}
+/* .navbarLogo:hover img{
+    transform: scale(1.09975);
+ } */
+/* echo "# deptwebsite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sojol4242/deptwebsite.git
+git push -u origin main */
+.navbarLinksContainer ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbarButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbarButton .signin,
+ 
+/* .navbarLinksContainer ul li a ,
+.navbarMenuContainerLinks ul li a{
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.navbarMenuContainerLinks ul li a{
+   line-height: 40px;
+} */
+
+.navbarMenuContainerLinks .navbarMenuLists .navbarMenuList,.navbarLinksContainer ul li a {
+  /* z-index: 1;
+  position: relative;
+
+  font-family: var(--font-family);
+
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsla(236, 32%, 26%, 0.102);
+  border-radius: 7px;
+  margin: 0 1em; */
+  z-index: 1;
+  position: relative;
+
+  font-family: var(--font-family);
+
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  /* background-color: hsla(236, 32%, 26%, 0.102); */
+  border-radius: 7px;
+  margin: 0 1em;
+  
+}
+.navbarMenuContainerLinks .navbarMenuLists .navbarMenuList {
+  margin: 1rem 0;
+}
+.navbarMenuContainerLinks .navbarMenuLists .navbarMenuList:hover,
+.navbarLinksContainer ul li a {
+  cursor: pointer;
+}
+
+.navbarMenuContainerLinks .navbarMenuLists .navbarMenuList::before,
+.navbarLinksContainer ul li a::before {
+   content: '';
+   position: absolute;
+   height: 2px;
+   
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: var(--color-text);
+   transform-origin: bottom left;
+   transform: scaleX(1);
+   transition: transform 0.3s ease-in-out;
+   /* content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid hsl(236, 32%, 26%);
+  border-radius: 7px;
+  transform-origin: center;
+  transform: scale(1); */
+}
+
+.navbarMenuContainerLinks .navbarMenuLists .navbarMenuList:hover::before,
+.navbarLinksContainer ul li a:hover::before {
+  /* transition: all 0.75s ease-in-out;
+  transform-origin: center;
+  transform: scale(1.75);
+  opacity: 0; */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.navbarButton .signin,
+.navbarButton .signup {
+  z-index: 1;
+  position: relative;
+  color: white;
+  outline: none;
+  border: none;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  padding: 0.5rem 1rem;
+
+  background: var(--gradient-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* for small devices (tablets and mobile)*/
+.navbarMenu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+.navbarMenu svg {
+  cursor: pointer;
+}
+.signin {
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.75s ease-in-out;
+}
+
+.signin::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: var(--gradient-text);
+
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.signin:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.signin:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+/* .navbarMenuButton > a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+.navbarMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  margin-top: 1rem;
+  min-width: 280px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  /* transition: transform 0.5s linear;
+   transform: scale3d(1.05); */
+  z-index: 999;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* responsive issue */
+@media screen and (max-width: 1050px) {
+  .navbarLinksContainer {
+    display: none;
+  }
+
+  .navbarMenu {
+    display: flex;
+  }
+  .navbarMenuButton .signin {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+  /* .navbarMenuButton .signin {
+    display: block;
+    margin: 1rem 0;
+  } */
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  /* .navbarButton {
+    display: none;
+  } */
+
+  .navbarMenuContainer {
+    top: 50px;
+  }
+  /* .navbarMenuButton .signin {
+    display: block;
+    margin: 1rem 0;
+  } */
+  /* .gpt3__navbar-menu_container-links-sign {
+       display: block;
+   } */
+}

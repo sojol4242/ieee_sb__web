@@ -1,0 +1,230 @@
+.dots {
+  width: 3em;
+  height: 3em;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.dots > div {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #3cefff;
+  border-radius: 50%;
+  animation: fade 1.5s alternate ease-in-out infinite;
+}
+
+.dots > div:nth-of-type(2),
+.dots > div:nth-of-type(4) {
+  animation-delay: 0.25s;
+}
+
+.dots > div:nth-of-type(3),
+.dots > div:nth-of-type(5),
+.dots > div:nth-of-type(7) {
+  animation-delay: 0.5s;
+}
+
+.dots > div:nth-of-type(6),
+.dots > div:nth-of-type(8) {
+  animation-delay: 0.75s;
+}
+
+.dots > div:nth-of-type(9) {
+  animation-delay: 1s;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0.2;
+  }
+}
+.hero__section {
+  display: flex;
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+  height: 100vh;
+}
+/* .hero__image{
+    background-image: url(https://i.ibb.co/YQbDP5G/animation-500-kx1immaa.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+.hero__content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.hero__content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero__content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text);
+  text-align: justify;
+
+  margin-top: 1.5rem;
+}
+.hero__content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+
+  display: flex;
+}
+.hero__content__input input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+  outline: none;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.hero__content__input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  background: var(--gradient-text);
+  border: 2px solid none;
+  padding: 0 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .hero__image img {
+  width: 100%;
+  height: 100%;
+} */
+
+@media screen and (max-width: 1050px) {
+  .hero__section {
+    flex-direction: column;
+    height: 100%;
+  
+  }
+
+  .hero__content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__section {
+    height: 100%;
+   
+  }
+  .hero__content{
+      padding: 2rem 0;
+  }
+  .hero__content h1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .hero__content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* .hero__content__people {
+    flex-direction: column;
+  } */
+
+  /* .hero__content__people p {
+    margin: 0;
+  } */
+
+  .hero__content__input input,
+  .hero__content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .hero__section {
+    height: 100%;
+  }
+  .hero__content h1 {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .hero__content p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .hero__content__input input,
+  .hero__content__input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+ 
