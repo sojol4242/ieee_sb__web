@@ -1,7 +1,11 @@
-import './footer.css';
-import React from 'react';
- 
+import "./footer.css";
+import React from "react";
+
 const Footer = () => {
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="footer section__padding">
       {/* <div className="footer-heading">
@@ -16,7 +20,13 @@ const Footer = () => {
 
       <div className="footer-links">
         <div className="footer-links_logo">
-          <a href="#" className="gradient__text font-bold text-2xl">Dept. of EEE</a>
+          <a
+            href="#"
+            onClick={{ scrollUp }}
+            className="gradient__text font-bold text-2xl"
+          >
+            Dept. of EEE
+          </a>
           <p className="mt-5">
             Bangabandhu Sheikh Mujibur Rahman <br />
             Science And Technology University, Gopalganj-8100.
@@ -24,29 +34,84 @@ const Footer = () => {
         </div>
         <div className="footer-links_div">
           <h4>Important Links</h4>
-          <p>Bsmrstu Robotics</p>
-          <p>Ohmrc</p>
-          <p>IEEE BSMRSTU</p>
-          <p>EEE Association</p>
+          <a
+            href="https://www.facebook.com/robogangbsmrstu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bsmrstu Robotics
+          </a>
+          <a
+            href="https://www.facebook.com/ohmresearch.club"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ohmrc
+          </a>
+          <a
+            href="https://www.facebook.com/groups/495013997212344"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IEEE BSMRSTU
+          </a>
+          <a
+            href="https://www.facebook.com/IEEEBSMRSTUSB"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EEE Association
+          </a>
         </div>
         <div className="footer-links_div">
           <h4>Useful Links</h4>
-          <p>Terms & Conditions </p>
-          <p>Privacy Policy</p>
-          <p>IEEE Offials</p>
-          <p>BUET EEE</p>
-        
+           
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a
+            href="https://www.ieee.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            IEEE Officials
+          </a>
+          <a
+            href="https://eee.buet.ac.bd/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BUET EEE
+          </a>
         </div>
         <div className="footer-links_div">
           <h4>Get in touch</h4>
-          <p>BSMRSTU EEE</p>
-          <p>085-132567</p>
-          <p>info@eeebsmrstu.net</p>
+          
+          <a
+            href="tel:02-6682257"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            02-6682257
+          </a>
+          <a
+            href="https://www.facebook.com/Department-of-EEE-Bsmrstu-1427559693989778"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BSMRSTU EEE
+          </a>
+          <a href="#">info@eeebsmrstu.net</a>
         </div>
       </div>
-<hr />
+      <hr />
       <div className="footer-copyright">
-        <p>&copy;&nbsp;<a href="#" className="font-bold">bsmrstu.eee.</a>&nbsp;&nbsp; All rights reserved.</p>
+        <p>
+          &copy;&nbsp;
+          <a href="#" className="font-bold">
+            bsmrstu.eee.
+          </a>
+          &nbsp;&nbsp; All rights reserved.
+        </p>
       </div>
     </div>
   );

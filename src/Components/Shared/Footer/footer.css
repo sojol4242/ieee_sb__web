@@ -89,7 +89,7 @@
   margin-bottom: 0.9rem;
 }
 
-.footer-links_div p {
+.footer-links_div a {
   font-size: 12px;
   line-height: 15px;
   font-family: var(--font-family);
@@ -97,6 +97,10 @@
 
   margin: 0.5rem 0;
   cursor: pointer;
+  transform: text-decoration .2s linear;
+}
+.footer-links_div a:hover{
+  text-decoration: underline;
 }
 .footer > hr {
   width: 100%;
