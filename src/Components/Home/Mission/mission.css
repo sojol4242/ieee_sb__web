@@ -22,7 +22,7 @@
 }
 .mission__left p {
   color: var( --color-text);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   /* font-weight: 500; */
   font-family: var(--font-family);
@@ -90,6 +90,11 @@
     .mission__right__container{
         flex-direction: column;
 
+    }
+    .mission__left{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .mission__left h1 {
         font-size: 28px;

@@ -14,7 +14,7 @@ const Faculties = () => {
       <div className="flex flex-row justify-center items-center text-2xl  mb-16">
         <div className="gradient__bar w-1/5"></div>
         <h1
-          className="font-bold text-center px-6 uppercase"
+          className="container__heading font-bold text-center px-6 uppercase"
           style={{
             color: 'var(--color-subtext)',
           }}

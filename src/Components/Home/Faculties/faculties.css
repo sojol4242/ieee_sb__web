@@ -4,6 +4,7 @@
 }
 .faculty__heading {
   color: var(--gradient-text) !important;
+
 }
 
 .faculties__container {
@@ -210,3 +211,4 @@
     box-shadow: 0 1.4rem 2.8rem 0 rgba(70, 70, 70, 0.171);
     transition: box-shadow 0.2s linear;
 }
+ 

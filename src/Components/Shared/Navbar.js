@@ -89,7 +89,7 @@ const Navbar = () => {
                 Sign In
               </a>
             </div> */}
-             <button>Sigin</button>
+             <button className="signin">Sigin</button>
           </div>
         )}
       </div>

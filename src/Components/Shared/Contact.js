@@ -13,12 +13,12 @@ const Contact = () => {
         <div className="flex flex-row justify-center items-center  mb-16">
         <div className="gradient__bar w-1/5"></div>
           <h1
-            className="font-bold text-3xl text-center  uppercase px-6"
+            className="font-bold text-3xl text-center  uppercase px-6 container__heading"
             style={{
               color: 'var(--color-subtext)',
             }}
           >
-            Contact Us
+            Contact
             {/* <div className="d-flex flex-col justify-center items-center">
          </div> */}
           </h1>

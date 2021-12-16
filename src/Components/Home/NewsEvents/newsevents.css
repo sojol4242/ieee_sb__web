@@ -12,7 +12,7 @@
 
 .blog-heading h1 {
   font-size: 48px;
-  line-height: 60px;
+  line-height: 20px;
   font-family: var(--font-family);
   font-weight: 800;
 }

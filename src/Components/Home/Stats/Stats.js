@@ -5,7 +5,7 @@ import React from "react";
 const Stats = () => {
   return (
     <>
-      <span className="gradient__text text-center text-3xl font-bold capitalize pt-16">
+      <span className="container__heading gradient__text text-center text-3xl font-bold capitalize pt-16">
         {" "}
         A place for learning, discovery, innovation, expression and discourse
       </span>

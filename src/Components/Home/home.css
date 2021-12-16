@@ -85,12 +85,17 @@
     .gradient__bar{
       width: 90%;
     }  
+    .container__heading{
+      font-size: .85rem !important;
+      line-height: 20px !important;
+      
+    }
   }
-
+ 
 /* scroll bar */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px var(--secondary-color);
-  background-color: var(--text-color);
+  -webkit-box-shadow: inset 0 0 6px var(--box-shadow);
+  background-color: var(--color-footer);
 }
 
 ::-webkit-scrollbar {

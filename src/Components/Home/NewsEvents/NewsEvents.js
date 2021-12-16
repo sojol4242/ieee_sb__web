@@ -7,16 +7,25 @@ const NewsEvents = () => {
   useEffect(() => {
     setArticle(blogData);
   });
-  console.log(blogData);
+   
   return (
     <div className="blog section__padding" id="blog">
-      <div className="blog-heading">
-        <div className="flex flex-row justify-center items-center">
-          <div className="gradient__bar w-1/5"></div>
-          <h1 className="gradient__text capitalize px-6">News and Events</h1>
-          <div className="gradient__bar w-1/5"></div>
+    
+    <div className="flex flex-row justify-center items-center  mb-16">
+        <div className="gradient__bar w-1/5"></div>
+          <h1
+            className="font-bold text-3xl text-center  uppercase px-6 container__heading"
+            style={{
+              color: 'var(--color-subtext)',
+            }}
+          >
+            News and Events
+            {/* <div className="d-flex flex-col justify-center items-center">
+         </div> */}
+          </h1>
+          <div className="gradient__bar  w-1/5"></div>
         </div>
-      </div>
+    
       <div className="blog-container">
         <div className="blog-container_groupA">
           {article.slice(0, 1).map((items) => (

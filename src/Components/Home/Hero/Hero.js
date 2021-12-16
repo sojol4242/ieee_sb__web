@@ -1,21 +1,47 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import Fade from 'react-reveal/Fade';
-import Typewriter from 'typewriter-effect';
-import './hero.css';
+import React from "react";
+import Fade from "react-reveal/Fade";
+import Typewriter from "typewriter-effect";
+import "./hero.css";
 const Hero = () => {
   return (
-    <div className="hero__section section__padding" id="home">
+    <div className="hero__section" id="home">
+      <div className="hero_bg"></div>
+      
+     <div className="bg__animation">
+     <div className="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          
+          <div className="dots1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+     </div>
       <Fade left>
         <div className="hero__content">
-      
           <h1 className="gradient__text">
             Department of
             <span>
-              {' '}
+              {" "}
               <Typewriter
                 options={{
-                  strings: ['Electrical  and  Electronic Engineering'],
+                  strings: ["Electrical  and  Electronic Engineering"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -23,9 +49,11 @@ const Hero = () => {
             </span>
           </h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae provident suscipit qui sapiente nesciunt ipsum expedita
-            architecto quis. Vero architecto veniam nemo sunt soluta!
+            “What we now want is closer contact and better understanding between
+            individuals and communities all over the earth, and the elimination
+            of egoism and pride which is always prone to plunge the world into
+            primeval barbarism and strife. Peace can only come as a natural
+            consequence of universal enlightenment.” ― <i>Nikola Tesla</i>
           </p>
           <div className="hero__content__input">
             <input
@@ -34,11 +62,14 @@ const Hero = () => {
               id="email"
               placeholder="Put your mail address"
             />
-            <button type="submit">Let's Learn</button>
+            <button type="submit">Go</button>
           </div>
+
         </div>
+        
       </Fade>
-      <Fade right>
+
+      {/* <Fade right>
         <div className="hero__image">
           <img
             src="https://i.ibb.co/YQbDP5G/animation-500-kx1immaa.gif"
@@ -47,18 +78,7 @@ const Hero = () => {
             className="image-fluid"
           />
         </div>
-      </Fade>
-      <div className="dots">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      </Fade> */}
     </div>
   );
 };
