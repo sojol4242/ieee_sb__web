@@ -37,9 +37,11 @@ Clone this repo with
 
 ```bash
   git clone https://github.com/sojol4242/eee__web
-  cd brunch
+  cd eee__web
+  npm install
+  npm start
 ```
-Then open index.html file in your web browser.
+Then open localhost:3000 file in your web browser.
     
 <!-- ### Screenshots
 ### Desktop View
