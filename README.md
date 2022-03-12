@@ -52,5 +52,7 @@ Then open localhost:3000 file in your web browser.
 ### Mobile View
 ![Landing page screenshot](https://i.ibb.co/tbsXKdN/Fire-Shot-Capture-065-Food-Order-App-Landing-Page-127-0-0-1.png/468x300?text=Hero) -->
  
-
+### Responsive Views
+ 
+![Landing page screenshot](https://i.ibb.co/fSXvDwC/Fire-Shot-Capture-013-Multi-Device-Website-Mockup-Generator-techsini-com.png)
   
