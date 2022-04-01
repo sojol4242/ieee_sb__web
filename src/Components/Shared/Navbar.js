@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import './navbar.css';
+import React, { useState } from "react";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import "./navbar.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   // const [open, setOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
   //   setShowLinks(!showLinks);
   //   console.log(!showLinks);
   // };
-  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <header className="navbar">
       <div className="navbarLinks">
@@ -21,23 +22,23 @@ const Navbar = () => {
           />
         </div>
         <div className="navbarLinksContainer">
-        <ul className="navbarMenuLists">
-                <li className="navbarMenuList">
-                  <a href="#home">Home</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#about">About</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#faculties">Faculties</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#">Library</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
+          <ul className="navbarMenuLists">
+            <li className="navbarMenuList">
+              <Link to="/home">Home</Link>
+            </li>
+            <li className="navbarMenuList">
+              <a href="#about">About</a>
+            </li>
+            <li className="navbarMenuList">
+              <a href="#faculties">Faculties</a>
+            </li>
+            <li className="navbarMenuList">
+              <Link to="/library">Library</Link>
+            </li>
+            <li className="navbarMenuList">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
       <button className="signin">Sign in</button>
@@ -89,7 +90,7 @@ const Navbar = () => {
                 Sign In
               </a>
             </div> */}
-             <button className="signin">Sigin</button>
+            <button className="signin">Sigin</button>
           </div>
         )}
       </div>

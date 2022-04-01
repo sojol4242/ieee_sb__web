@@ -1,25 +1,54 @@
-import React, { Suspense }  from 'react';
-import './assests/main.css';
-import './assests/tailwind.css';
-import Loader from './Components/Shared/Loader';
- 
-// import Home from './Components/Home/Home'
- 
-const Home = React.lazy(() => import('./Components/Home/Home'));
+import React, { Suspense } from "react";
+import "./assests/main.css";
+import "./assests/tailwind.css";
+import ComingSoon from "./Components/Shared/ComingSoon";
+import Loader from "./Components/Shared/Loader";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+const Home = React.lazy(() => import("./Components/Home/Home"));
 
 function App() {
   return (
     <>
-      <Suspense
-        fallback={
-          <div className="flex flex-col justify-center items-center">
-             <Loader/>
-          </div>
-        }
-      >
-        <Home />
-      </Suspense>
-      {/* <Home /> */}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <Home />
+            </Suspense>
+          </Route>
+          <Route path="/home">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <Home />
+            </Suspense>
+          </Route>
+
+          <Route path="/library">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <ComingSoon />
+            </Suspense>
+          </Route>
+        </Switch>
+        {/* <Home /> */}
+      </Router>
     </>
   );
 }

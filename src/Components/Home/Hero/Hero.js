@@ -7,41 +7,48 @@ const Hero = () => {
   return (
     <div className="hero__section" id="home">
       <div className="hero_bg"></div>
-      
-     <div className="bg__animation">
-     <div className="dots">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          
-          <div className="dots1">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-     </div>
+
+      <div className="bg__animation">
+        <div className="dots">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div className="dots1">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <Fade left>
         <div className="hero__content">
           <h1 className="gradient__text">
-            Department of
+            {/* Department of */}
             <span>
               {" "}
               <Typewriter
                 options={{
-                  strings: ["Electrical  and  Electronic Engineering"],
+                  strings: [
+                    "Department of",
+                    " Electrical  and  Electronic Engineering",
+                    "A Place For Learning",
+                    " Discovery",
+                    "Innovation",
+                    "Expression And Discourse",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
@@ -60,13 +67,11 @@ const Hero = () => {
               type="email"
               name="email"
               id="email"
-              placeholder="Put your mail address"
+              placeholder="Put your web mail"
             />
             <button type="submit">Go</button>
           </div>
-
         </div>
-        
       </Fade>
 
       {/* <Fade right>

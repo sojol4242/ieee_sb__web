@@ -91,7 +91,6 @@ git push -u origin main */
   /* background-color: hsla(236, 32%, 26%, 0.102); */
   border-radius: 7px;
   margin: 0 1em;
-  
 }
 .navbarMenuContainerLinks .navbarMenuLists .navbarMenuList {
   margin: 1rem 0;
@@ -103,18 +102,18 @@ git push -u origin main */
 
 .navbarMenuContainerLinks .navbarMenuLists .navbarMenuList::before,
 .navbarLinksContainer ul li a::before {
-   content: '';
-   position: absolute;
-   height: 2px;
-   
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background-color: var(--color-text);
-   transform-origin: bottom left;
-   transform: scaleX(1);
-   transition: transform 0.3s ease-in-out;
-   /* content: '';
+  content: "";
+  position: absolute;
+  height: 2px;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-text);
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+  /* content: '';
   z-index: -1;
   position: absolute;
   top: 0;
@@ -185,7 +184,7 @@ git push -u origin main */
 }
 
 .signin::before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   top: 50%;
@@ -204,8 +203,40 @@ git push -u origin main */
   color: #fff;
 }
 
-.signin:hover::before {
+.signin:hover::before,
+.common_btn:hover::before {
   transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.common_btn {
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-family);
+
+  color: rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 5px;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.75s ease-in-out;
+}
+.common_btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: var(--gradient-text);
+
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
 }
 /* .navbarMenuButton > a {
   padding: 0.5rem 1rem;
