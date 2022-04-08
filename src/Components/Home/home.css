@@ -1,97 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 :root {
-  --font-family: 'Manrope', sans-serif;
-  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%); 
-  --color-bg: #040C18;
-  --color-footer : #031B34;
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
   --color-blog: #042c54;
-  --color-text: #81AFDD;
-  --color-subtext: #FF8A71;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
 }
-.gradient__bar{
+.gradient__bar {
   /* width: 30%; */
   height: 4px;
   background: var(--gradient-bar);
   box-shadow: 0px 4px -4px 0 rgba(225, 132, 253, 0.25);
   margin-bottom: 0.25rem;
 }
-  .gradient__text {
-    background: var(--gradient-text);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
-  
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4rem 6rem;
+    padding: 4rem;
   }
-  
+
   .section__margin {
-    margin: 4rem 6rem;
+    margin: 4rem;
   }
-  
-  .scale-up-center {
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
   }
-  
-  @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
+
+  .section__margin {
+    margin: 4rem 2rem;
   }
-  
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
+  .gradient__bar {
+    width: 90%;
   }
-  
-  @media screen and (max-width: 700px) {
-    .section__padding {
-      padding: 4rem;
-    }
-  
-    .section__margin {
-      margin: 4rem;
-    }
+  .container__heading {
+    font-size: 0.85rem !important;
+    line-height: 20px !important;
   }
-  
-  @media screen and (max-width: 550px) {
-    .section__padding {
-      padding: 4rem 2rem;
-    }
-  
-    .section__margin {
-      margin: 4rem 2rem;
-    }
-    .gradient__bar{
-      width: 90%;
-    }  
-    .container__heading{
-      font-size: .85rem !important;
-      line-height: 20px !important;
-      
-    }
-  }
- 
+}
+
 /* scroll bar */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px var(--box-shadow);
@@ -101,12 +101,11 @@
 ::-webkit-scrollbar {
   width: 10px;
   background-color: var(--color-footer);
-  border-radius: 0 0 999px 999px  !important;
+  border-radius: 0 0 999px 999px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var( --color-text);
-  border: 2px solid var( --color-text);
-  border-radius: 0 0 999px 999px  !important;
-
+  background-color: var(--color-text);
+  border: 2px solid var(--color-text);
+  border-radius: 0 0 999px 999px !important;
 }

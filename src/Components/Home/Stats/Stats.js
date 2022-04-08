@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { faHistory, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import CountUp from "react-countup";
 
 const Stats = () => {
   return (
@@ -10,31 +12,62 @@ const Stats = () => {
         A place for learning, discovery, innovation, expression and discourse
       </span>
       <div className="stats__container">
-        
         <div className="single__stat shadow-lg">
-          <FontAwesomeIcon icon={faHistory} className="icon" />
+          <img
+            className="icon"
+            src="https://img.icons8.com/bubbles/50/000000/timer.png"
+          />
           <div className="number">2012</div>
           <span className="number__title">Opened in</span>
         </div>
-        <div className="single__stat flex flex-col justify-center items-center p-8  mx-2 rounded-md shadow-md ">
-          <FontAwesomeIcon icon={faUserTie} className="icon" />
-          <div className="number">17+</div>
+        <div className="single__stat shadow-lg">
+          <img
+            className="icon"
+            src="https://img.icons8.com/fluency/48/000000/teacher.png"
+          />
+          <div className="number">
+            {" "}
+            <CountUp start={0} end={17} delay={0} duration={3}>
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />+
+                </div>
+              )}
+            </CountUp>
+          </div>
           <span className="number__title">Faculties</span>
         </div>
-        <div className="single__stat flex flex-col justify-center items-center p-8  mx-2 rounded-md shadow-md ">
+        <div className="single__stat shadow-lg">
           <img
             className="icon"
-            src="https://img.icons8.com/ultraviolet/40/000000/selfish.png"
+            src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-students-achievements-flaticons-flat-flat-icons-4.png"
           />
-          <div className="number">560+</div>
+          <div className="number">
+            <CountUp start={0} end={560} delay={0} duration={2}>
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />+
+                </div>
+              )}
+            </CountUp>
+          </div>
           <span className="number__title">Students</span>
         </div>
-        <div className="single__stat flex flex-col justify-center items-center p-8  mx-auto rounded-md shadow-md ">
+        <div className="single__stat shadow-lg">
           <img
             className="icon"
-            src="https://img.icons8.com/ios/50/000000/electrical-sensor.png"
+            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-machine-industry-flaticons-lineal-color-flat-icons.png"
           />
-          <div className="number">9+</div>
+          <div className="number">
+            {" "}
+            <CountUp start={0} end={10} delay={0} duration={4}>
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />+
+                </div>
+              )}
+            </CountUp>
+          </div>
           <span className="number__title">Digital Laboratories</span>
         </div>
       </div>
