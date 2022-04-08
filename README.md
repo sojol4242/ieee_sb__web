@@ -19,7 +19,7 @@ Contributions are always welcome!
 
 
   
-## Demo https://eeebsmrstu-9ed3d.web.app/
+### Demo https://bsmrstueee.netlify.app/
   
 ## Used Tech
 
