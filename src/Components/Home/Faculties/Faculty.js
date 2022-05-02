@@ -3,14 +3,17 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { urlFor } from "../../../client";
 const Faculty = ({ f_data }) => {
-  const { name, email, img_url } = f_data;
+  const { faculties_name, email, imageUrl, linkedin, mobile_number, position } =
+    f_data;
+  console.log(f_data);
   return (
     <div className="faculty__card">
-      <img src={img_url} alt="name" title="name" />
+      <img src={urlFor(imageUrl)} alt="name" title="name" />
       <div className="faculty__info">
-        <h3 className="faculty__name">{name}</h3>
-        <p className="faculty__title">{email}</p>
+        <h3 className="faculty__name">{faculties_name}</h3>
+        <p className="faculty__title">{position}</p>
 
         <div className="faculty__contact">
           <div className="flex flex-row justify-center items-center">

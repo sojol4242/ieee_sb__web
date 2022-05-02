@@ -72,16 +72,14 @@ const Navbar = () => {
                   <a href="#">Home</a>
                 </li>
                 <li className="navbarMenuList">
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
+                </li>
+
+                <li className="navbarMenuList">
+                  <Link to="/library">Library</Link>
                 </li>
                 <li className="navbarMenuList">
-                  <a href="#">Why EEE?</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#">Library</a>
-                </li>
-                <li className="navbarMenuList">
-                  <a href="#">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>

@@ -3,26 +3,24 @@ import React, { useEffect, useState } from "react";
 import Faculty from "./Faculty";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
-
-// import required modules
-// import { Autoplay, Pagination, EffectCoverflow } from "swiper/core";
-
-import faculty_data from "./faculty_data.json";
+import { client } from "../../../client";
+import { Link } from "react-router-dom";
 
 const Faculties = () => {
-  const data = faculty_data;
   const [faculty, setFaculty] = useState([]);
 
   useEffect(() => {
-    setFaculty(data);
-    console.log(data);
-  }, [faculty]);
-  // console.log(faculty);
+    const query = '*[_type=="faculties"]';
+    client
+      .fetch(query)
+      .then((data) => {
+        setFaculty(data);
+      })
+      .then((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <div
       id="faculties"
@@ -43,14 +41,17 @@ const Faculties = () => {
 
       <div className="faculties__container">
         {" "}
-        {faculty.map((f_data) => (
-          <Faculty f_data={f_data} />
-        ))}
+        {faculty
+          .map((f_data) => <Faculty f_data={f_data} key={f_data._id} />)
+          .slice(0, 4)}
       </div>
 
-      <button className="text-center see__more__button shadow-sm">
+      <Link
+        to="/see_more_faculties"
+        className="text-center see__more__button shadow-sm"
+      >
         See More <FontAwesomeIcon icon={faArrowCircleRight} />
-      </button>
+      </Link>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 .faculties__section {
   background: var(--color-bg);
+  min-height: 100vh;
 }
 .faculty__heading {
   color: var(--gradient-text) !important;
