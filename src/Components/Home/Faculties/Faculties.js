@@ -1,18 +1,28 @@
 import "./faculties.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Faculty from "./Faculty";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/effect-coverflow";
+// import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination, EffectCoverflow } from "swiper/core";
+// import { Autoplay, Pagination, EffectCoverflow } from "swiper/core";
+
+import faculty_data from "./faculty_data.json";
 
 const Faculties = () => {
+  const data = faculty_data;
+  const [faculty, setFaculty] = useState([]);
+
+  useEffect(() => {
+    setFaculty(data);
+    console.log(data);
+  }, [faculty]);
+  // console.log(faculty);
   return (
     <div
       id="faculties"
@@ -33,10 +43,9 @@ const Faculties = () => {
 
       <div className="faculties__container">
         {" "}
-        <Faculty />
-        <Faculty />
-        <Faculty />
-        <Faculty />
+        {faculty.map((f_data) => (
+          <Faculty f_data={f_data} />
+        ))}
       </div>
 
       <button className="text-center see__more__button shadow-sm">
