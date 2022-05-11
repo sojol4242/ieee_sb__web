@@ -1,5 +1,5 @@
 
-# Landing Page For Introduce My Department 
+# Landing Page For Introduce EEE Department 
 
 It's a simple landing page for introduce my department.
 
