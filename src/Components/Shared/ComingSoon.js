@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import coming_soon from "../../assests/img/comming_soon.svg";
+
 import "./comingsoon.css";
 import "./navbar.css";
 

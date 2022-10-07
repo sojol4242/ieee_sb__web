@@ -27,23 +27,29 @@ const Faculties = () => {
       className="section__padding faculties__section flex flex-col justify-center items-center"
     >
       <div className="flex flex-row justify-center items-center text-2xl  mb-16">
-        <div className="gradient__bar w-1/5"></div>
+        <div className="gradient__bar w-2/5"></div>
         <h1
           className="container__heading font-bold text-center px-6 uppercase"
           style={{
             color: "var(--color-subtext)",
           }}
         >
-          honorable faculty Members
+          Executive Committee
         </h1>
-        <div className="gradient__bar w-1/5"></div>
+        <div className="gradient__bar w-2/5"></div>
       </div>
 
       <div className="faculties__container">
-        {" "}
+        {/* {" "}
         {faculty
           .map((f_data) => <Faculty f_data={f_data} key={f_data._id} />)
-          .slice(0, 4)}
+          .slice(0, 4)} */}
+          <Faculty />
+          <Faculty />
+          <Faculty />
+          <Faculty />
+          <Faculty />
+          
       </div>
 
       <Link

@@ -2,23 +2,26 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  // const [open, setOpen] = useState(false);
-  // const [showLinks, setShowLinks] = useState(false);
-  // const handleHamburger = () => {
-  //   setShowLinks(!showLinks);
-  //   console.log(!showLinks);
-  // };
+
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", () => {
+  //     setToggleMenu(false);
+  //   });
+  // });
+
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   return (
+ 
     <header className="navbar">
       <div className="navbarLinks">
         <div className="navbarLogo" onClick={scrollTop}>
           <img
-            src="https://i.ibb.co/ZS6F9Bx/unnamed.jpg"
+            src="https://i.ibb.co/nwg8C2n/BSMRSTU-STUDENT-BRANCH-3.png"
             alt="logo"
-            title="Department of Electrical and Electronic Engineering, BSMRSTU"
+            title="IEEE Student Branch, BSMRSTU"
           />
         </div>
         <div className="navbarLinksContainer">
@@ -27,28 +30,31 @@ const Navbar = () => {
               <Link to="/home">Home</Link>
             </li>
             <li className="navbarMenuList">
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="navbarMenuList">
-              <a href="#faculties">Faculties</a>
+              <a href="#faculties">Committee</a>
             </li>
             <li className="navbarMenuList">
-              <Link to="/library">Library</Link>
+              <Link to="/library">Events</Link>
             </li>
             <li className="navbarMenuList">
-              <a href="#contact">Contact</a>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li className="navbarMenuList">
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
       </div>
-      <button className="signin">Sign in</button>
+      <button className="signin">Join IEEE</button>
       {/* <div className="navbarButton">
         <a href="#" className="signin">
           Sign In
         </a>
        
       </div> */}
-      <div className="navbarMenu">
+      <div className="navbarMenu" onClose={() => setToggleMenu(false)}>
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -69,17 +75,19 @@ const Navbar = () => {
             <div className="navbarMenuContainerLinks">
               <ul className="navbarMenuLists">
                 <li className="navbarMenuList">
-                  <a href="#">Home</a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li className="navbarMenuList">
-                  <a href="#about">About</a>
+                  <Link to="/about">About</Link>
                 </li>
-
+                <li className="navbarMenuList">
+                  <a href="#faculties">Faculties</a>
+                </li>
                 <li className="navbarMenuList">
                   <Link to="/library">Library</Link>
                 </li>
                 <li className="navbarMenuList">
-                  <a href="#contact">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

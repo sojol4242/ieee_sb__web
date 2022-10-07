@@ -4,6 +4,7 @@ import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar";
 import ScrollTop from "../Shared/ScrollTop";
 import Faculties from "./Faculties/Faculties.js";
+import Gallery from "./Gallery/Gallery";
 import Hero from "./Hero/Hero";
 import "./home.css";
 import Mission from "./Mission/Mission";
@@ -27,6 +28,8 @@ const Home = () => {
       <About />
       {/* news and event */}
       {/* <NewsEvents /> */}
+      {/* Gallery */}
+      <Gallery />
       <Contact />
       <Footer />
       <ScrollTop />

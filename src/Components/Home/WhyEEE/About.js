@@ -14,7 +14,7 @@ const About = () => {
       <div className="about__header">
         <div className="about__heading flex flex-col justify-start items-start sm:justify-center mb-3">
           <h1 className="gradient__text capitalize text-3xl font-bold">
-            BSMRSTU EEE
+            IEEE BSMRSTU SB
           </h1>
           <div className="gradient__bar w-1/5 my-3"></div>
 

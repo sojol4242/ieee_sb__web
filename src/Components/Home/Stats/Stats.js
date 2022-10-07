@@ -17,7 +17,7 @@ const Stats = () => {
             className="icon"
             src="https://img.icons8.com/bubbles/50/000000/timer.png"
           />
-          <div className="number">2012</div>
+          <div className="number">2021</div>
           <span className="number__title">Opened in</span>
         </div>
         <div className="single__stat shadow-lg">
@@ -27,7 +27,7 @@ const Stats = () => {
           />
           <div className="number">
             {" "}
-            <CountUp start={0} end={17} delay={0} duration={3}>
+            <CountUp start={0} end={127} delay={0} duration={3}>
               {({ countUpRef }) => (
                 <div>
                   <span ref={countUpRef} />+
@@ -35,7 +35,7 @@ const Stats = () => {
               )}
             </CountUp>
           </div>
-          <span className="number__title">Faculties</span>
+          <span className="number__title">Members</span>
         </div>
         <div className="single__stat shadow-lg">
           <img
@@ -43,7 +43,7 @@ const Stats = () => {
             src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-students-achievements-flaticons-flat-flat-icons-4.png"
           />
           <div className="number">
-            <CountUp start={0} end={560} delay={0} duration={2}>
+            <CountUp start={0} end={2} delay={0} duration={2}>
               {({ countUpRef }) => (
                 <div>
                   <span ref={countUpRef} />+
@@ -51,9 +51,9 @@ const Stats = () => {
               )}
             </CountUp>
           </div>
-          <span className="number__title">Students</span>
+          <span className="number__title">Publications</span>
         </div>
-        <div className="single__stat shadow-lg">
+        {/* <div className="single__stat shadow-lg">
           <img
             className="icon"
             src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-machine-industry-flaticons-lineal-color-flat-icons.png"
@@ -69,7 +69,7 @@ const Stats = () => {
             </CountUp>
           </div>
           <span className="number__title">Digital Laboratories</span>
-        </div>
+        </div> */}
       </div>
     </>
   );

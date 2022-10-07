@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./footer.css";
 import React from "react";
 
@@ -20,12 +21,13 @@ const Footer = () => {
 
       <div className="footer-links">
         <div className="footer-links_logo">
+    
           <a
             href="#"
             onClick={{ scrollUp }}
-            className="gradient__text font-bold text-2xl"
+            className="gradient__text font-bold text-xl"
           >
-            Dept. of EEE
+            IEEE STUDENT BRANCH
           </a>
           <p className="mt-5">
             Bangabandhu Sheikh Mujibur Rahman <br />
@@ -98,9 +100,9 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            BSMRSTU EEE
+            IEEE SB BSMRSTU
           </a>
-          <a href="#">info@eeebsmrstu.net</a>
+          <a href="#">info@ieeesbbsmrstu</a>
         </div>
       </div>
       <hr />
@@ -108,7 +110,7 @@ const Footer = () => {
         <p>
           &copy;&nbsp;
           <a href="#" className="font-bold">
-            bsmrstu.eee.
+            ieeesb.bsmrstu
           </a>
           &nbsp;&nbsp; All rights reserved.
         </p>

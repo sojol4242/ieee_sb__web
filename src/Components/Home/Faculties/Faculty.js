@@ -5,15 +5,15 @@ import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { urlFor } from "../../../client";
 const Faculty = ({ f_data }) => {
-  const { faculties_name, email, imageUrl, linkedin, mobile_number, position } =
-    f_data;
-  console.log(f_data);
+  // const { faculties_name, email, imageUrl, linkedin, mobile_number, position } =
+  //   f_data;
+
   return (
     <div className="faculty__card">
-      <img src={urlFor(imageUrl)} alt="name" title="name" />
+      <img src="https://scontent.fdac116-1.fna.fbcdn.net/v/t39.30808-1/302535433_1126417394746613_615873177390509472_n.jpg?stp=dst-jpg_p240x240&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=GeNJtaswVrAAX-WQ-LV&tn=966Dka6x7-GI4ERs&_nc_ht=scontent.fdac116-1.fna&oh=00_AT90cV_H9QP26IDfRu2DOi84Fb1usZfY9SX9hl1YzFfa5A&oe=6338402B" alt="name" title="name" />
       <div className="faculty__info">
-        <h3 className="faculty__name">{faculties_name}</h3>
-        <p className="faculty__title">{position}</p>
+        <h3 className="faculty__name">Md Moniruzzaman Sojol</h3>
+        <p className="faculty__title">Web Master</p>
 
         <div className="faculty__contact">
           <div className="flex flex-row justify-center items-center">

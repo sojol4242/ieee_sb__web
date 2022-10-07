@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
-import "./assests/main.css";
-import "./assests/tailwind.css";
+import "./assets/main.css";
+import "./assets/tailwind.css";
 import ComingSoon from "./Components/Shared/ComingSoon";
 import Loader from "./Components/Shared/Loader";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -37,6 +37,28 @@ function App() {
           </Route>
 
           <Route path="/library">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <ComingSoon />
+            </Suspense>
+          </Route>
+          <Route path="/about">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <ComingSoon />
+            </Suspense>
+          </Route>
+          <Route path="/contact">
             <Suspense
               fallback={
                 <div className="flex flex-col justify-center items-center">

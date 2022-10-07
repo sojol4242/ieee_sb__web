@@ -42,8 +42,7 @@ const Hero = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Department of",
-                    " Electrical  and  Electronic Engineering",
+                    "Welcome to IEEE BSMRSTU SB",
                     "A Place For Learning",
                     " Discovery",
                     "Innovation",
