@@ -1,7 +1,7 @@
 
-# Landing Page For Introduce EEE Department 
+# Landing Page For Introduce IEEE SB BSMRSTU 
 
-It's a simple landing page for introduce my department.
+ 
 
 ## Appendix
 
