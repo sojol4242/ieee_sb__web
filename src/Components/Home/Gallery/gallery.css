@@ -1,63 +1,61 @@
 /* Portfolio Section */
- 
-.gallery_items{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-	padding: 2.8rem;
-	grid-gap: 10px;
-	grid-auto-flow: dense;
+
+.gallery_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  padding: 2.8rem;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
 }
 .gallery_item {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 9px;
-	transition: all 0.2s linear; 
-	
-	 
-
+ 
+  object-fit: cover;
+  border-radius: 9px;
+  transition: all 0.2s linear;
 }
 .gallery_item .hover-bg {
-	overflow: hidden;
-	position: relative;
-	margin: 0;
-    cursor: pointer;
-    border-radius: 10px;
-	background: var(--color-bg);
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background: var(--color-bg);
 }
-.hover-bg  .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 1.5em;
-	font-weight: 600;
-	color: var(--color-bg);
-	background: #ff8b71ba;
-	padding: 30% 0 0 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-	text-transform: uppercase;
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--color-bg);
+  background: #ff8b718e;
+  padding: 30% 0 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  text-transform: uppercase;
 }
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	color: #fff;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-	font-size: 18px;
-	letter-spacing: 1px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-.hover-bg:hover .hover-text  {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .hover-bg:hover .hover-text {
-	opacity: 1;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+.gallery_item .hover-bg img{
+	
 }

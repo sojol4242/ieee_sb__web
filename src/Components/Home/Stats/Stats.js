@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { faHistory, faUserTie } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+ 
 import React from "react";
 import CountUp from "react-countup";
 
@@ -40,7 +39,7 @@ const Stats = () => {
         <div className="single__stat shadow-lg">
           <img
             className="icon"
-            src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-students-achievements-flaticons-flat-flat-icons-4.png"
+            src="https://img.icons8.com/stickers/344/publication.png"
           />
           <div className="number">
             <CountUp start={0} end={2} delay={0} duration={2}>
