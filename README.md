@@ -16,10 +16,6 @@ Any additional information goes here
 ## Contributing
 
 Contributions are always welcome!
-
-
-  
-### Demo https://bsmrstueee.netlify.app/
   
 ## Used Tech
 
