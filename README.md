@@ -32,7 +32,7 @@ Contributions are always welcome!
 Clone this repo with
 
 ```bash
-  git clone https://github.com/sojol4242/eee__web
+  git clone https://github.com/sojol4242/ieee_sb__web
   cd ieee_sb__web
   npm install
   npm start
