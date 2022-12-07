@@ -1,7 +1,7 @@
 
-# Landing Page For Introduce EEE Department 
+# Landing Page For Introduce IEEE SB BSMRSTU 
 
-It's a simple landing page for introduce my department.
+ 
 
 ## Appendix
 
@@ -16,10 +16,6 @@ Any additional information goes here
 ## Contributing
 
 Contributions are always welcome!
-
-
-  
-### Demo https://bsmrstueee.netlify.app/
   
 ## Used Tech
 
@@ -36,8 +32,8 @@ Contributions are always welcome!
 Clone this repo with
 
 ```bash
-  git clone https://github.com/sojol4242/eee__web
-  cd eee__web
+  git clone https://github.com/sojol4242/ieee_sb__web
+  cd ieee_sb__web
   npm install
   npm start
 ```
