@@ -32,7 +32,7 @@ const More_Fac = () => {
                 color: "var(--color-text)",
               }}
             >
-              honorable faculty Members
+              Executive Committee 22zz
             </h1>
             <div className="gradient__bar w-1/5"></div>
           </div>

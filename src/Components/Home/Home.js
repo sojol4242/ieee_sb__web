@@ -8,7 +8,7 @@ import Gallery from "./Gallery/Gallery";
 import Hero from "./Hero/Hero";
 import "./home.css";
 import Mission from "./Mission/Mission";
-// import NewsEvents from "./NewsEvents/NewsEvents";
+import RecentEvents from "./Events/RecentEvents";
 import About from "./WhyEEE/About";
 
 // import WhyEEE from './WhyEEE/WhyEEE'
@@ -27,9 +27,10 @@ const Home = () => {
       {/* About */}
       <About />
       {/* news and event */}
-      {/* <NewsEvents /> */}
+    
       {/* Gallery */}
       <Gallery />
+      <RecentEvents />
       <Contact />
       <Footer />
       <ScrollTop />

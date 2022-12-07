@@ -11,7 +11,7 @@ const Faculty = ({ f_data }) => {
   return (
     <div className="faculty__card">
       <img
-        src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        src="https://i.ibb.co/B3YzWvC/317466674-1184292782292407-4794890684377537361-n.jpg"
         alt="name"
         title="name"
       />
@@ -33,16 +33,16 @@ const Faculty = ({ f_data }) => {
             <div className="gradient__bar w-1/5"></div>
           </div>
           <div id="faculty__contact__links">
-            <a href="#">
+            <a href="bsmrstueee90@gmail.coms">
               <FontAwesomeIcon icon={faAt} className="fac__icon" />
             </a>
             <a href="#">
               <FontAwesomeIcon icon={faPhone} className="fac__icon" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/moniruzzaman-sojol/">
               <FontAwesomeIcon icon={faLinkedinIn} className="fac__icon" />
             </a>
-            <a href="#">
+            <a href="bsmrstueee90@gmail.com">
               <FontAwesomeIcon icon={faGoogle} className="fac__icon" />
             </a>
           </div>

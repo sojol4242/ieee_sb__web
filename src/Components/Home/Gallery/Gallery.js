@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import "./gallery.css";
+import useFetch from "../../../Hooks/useFetch";
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -57,7 +58,11 @@ const Gallery = () => {
         title: "Image 10",
     },
   ];
-  const images = data.map((obj) => obj.thumb.replace("-small", "-large"));
+  // data from strapi
+//   const {loading,error,data}=useFetch("http://localhost:1337/api/galleries?populate=*");
+//  const g_data=data;
+//  console.log(g_data);
+ const images = data.map((obj) => obj.thumb.replace("-small", "-large"));
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
     setIsViewerOpen(true);
@@ -87,8 +92,7 @@ const Gallery = () => {
       <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
         <div className="flex flex-wrap m-1 md:m-2">
           <div className="flex flex-wrap w-1/2">
-            {data
-              .map(({ title, thumb }, index) => (
+            {data.map(({ title, thumb }, index) => (
                 <div
                   key={index}
                   onClick={() => openImageViewer(index)}

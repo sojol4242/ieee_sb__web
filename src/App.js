@@ -69,7 +69,18 @@ function App() {
               <ComingSoon />
             </Suspense>
           </Route>
-          <Route path="/see_more_faculties">
+          <Route path="/see_more_committee">
+            <Suspense
+              fallback={
+                <div className="flex flex-col justify-center items-center">
+                  <Loader />
+                </div>
+              }
+            >
+              <More_Fac />
+            </Suspense>
+          </Route>
+          <Route path="/see_more_events">
             <Suspense
               fallback={
                 <div className="flex flex-col justify-center items-center">

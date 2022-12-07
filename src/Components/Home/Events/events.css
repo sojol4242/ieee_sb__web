@@ -1,0 +1,47 @@
+ .cards{
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 20px;
+    align-items: center;
+    
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+.frame {
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+}
+.card .title {
+  text-align: center;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:rgb(2, 5, 77);
+  margin: 0.5rem 0;
+
+}
+
+.frame {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.frame img {
+  object-fit: cover;
+  width: 100%;
+  transform: translateY(0);
+  transition: 2s ease-out;
+}
+.frame:hover img {
+  object-fit: cover;
+  width: 100%;
+  /* Considering frame height   */
+  transform: translateY(calc(-100% + 300px));
+  transition: 2s ease-out;
+}

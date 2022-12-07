@@ -107,15 +107,11 @@ const Faculties = () => {
             <Faculty />
           </SwiperSlide>
         </Swiper>
-
-        {/* {" "}
-        {faculty
-          .map((f_data) => <Faculty f_data={f_data} key={f_data._id} />)
-          .slice(0, 4)} */}
+ 
       </div>
 
       <Link
-        to="/see_more_faculties"
+        to="/see_more_committee"
         className="text-center see__more__button shadow-sm"
       >
         See More <FontAwesomeIcon icon={faArrowCircleRight} />

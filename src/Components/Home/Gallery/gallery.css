@@ -8,7 +8,6 @@
   grid-auto-flow: dense;
 }
 .gallery_item {
- 
   object-fit: cover;
   border-radius: 9px;
   transition: all 0.2s linear;
