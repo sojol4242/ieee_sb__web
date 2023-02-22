@@ -8,6 +8,14 @@ import RecentEvent from "./RecentEvent";
 
 const RecentEvents = () => {
   const events = [
+   
+ 
+    {
+      id: 1263,
+      heading: 'Membership Requirement',
+      
+      imgURL: `https://i.ibb.co/y61gq8t/membership-requiremnt-3.png`,
+    }, 
     {
       id: 123,
       heading: 'COMMUNICATE WITH PROFESSORS',
@@ -16,15 +24,9 @@ const RecentEvents = () => {
     },
     {
       id: 6123,
-      heading: 'Higher Study In Abroad',  
-      imgURL: `https://images.unsplash.com/photo-1532708059644-5590ed51ce4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZHklMjBhYnJvYWQlMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60`,
+      heading: 'New Committee 22',  
+      imgURL: `https://i.ibb.co/VjjtYbF/278610074-295451906100366-5374315259759649151-n.jpg`,
     },
-    {
-      id: 1263,
-      heading: 'Membership Requirement',
-      
-      imgURL: `https://i.ibb.co/y61gq8t/membership-requiremnt-3.png`,
-    }, 
   ];
   const [event, setEvent] = useState(events);
   

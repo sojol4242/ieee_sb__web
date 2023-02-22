@@ -77,7 +77,7 @@ function App() {
                 </div>
               }
             >
-              <More_Fac />
+               <ComingSoon />
             </Suspense>
           </Route>
           <Route path="/see_more_events">
@@ -88,7 +88,7 @@ function App() {
                 </div>
               }
             >
-              <More_Fac />
+                <ComingSoon />
             </Suspense>
           </Route>
         </Switch>

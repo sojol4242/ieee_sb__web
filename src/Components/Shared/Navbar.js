@@ -36,18 +36,18 @@ const Navbar = () => {
               <a href="#faculties">Committee</a>
             </li>
             <li className="navbarMenuList">
-              <Link to="/library">Events</Link>
+            <a href="#events">Events</a>
             </li>
             <li className="navbarMenuList">
               <a href="#gallery">Gallery</a>
             </li>
             <li className="navbarMenuList">
-              <Link to="/contact">Contact</Link>
+            <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-      <button className="signin">Join IEEE</button>
+      <a className="signin" href="https://docs.google.com/forms/d/e/1FAIpQLSdR77BlAldzMlzrbIVZ_ayjO2ND2UKf4x3TBgkGixo8_rVAwA/viewform?ts=6378e6c1" target="_blank" rel="noreferrer">Join IEEE</a> 
       {/* <div className="navbarButton">
         <a href="#" className="signin">
           Sign In
@@ -87,7 +87,7 @@ const Navbar = () => {
                   <Link to="/library">Library</Link>
                 </li>
                 <li className="navbarMenuList">
-                  <Link to="/contact">Contact</Link>
+                <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 Sign In
               </a>
             </div> */}
-            <button className="signin">Sigin</button>
+          <a className="signin" href="https://docs.google.com/forms/d/e/1FAIpQLSdR77BlAldzMlzrbIVZ_ayjO2ND2UKf4x3TBgkGixo8_rVAwA/viewform?ts=6378e6c1" target="_blank" rel="noreferrer">Join IEEE</a> 
           </div>
         )}
       </div>
