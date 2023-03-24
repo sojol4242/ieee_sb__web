@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "./assets/main.css";
 import "./assets/tailwind.css";
 import ComingSoon from "./Components/Shared/ComingSoon";
@@ -77,7 +77,7 @@ function App() {
                 </div>
               }
             >
-               <ComingSoon />
+              <ComingSoon />
             </Suspense>
           </Route>
           <Route path="/see_more_events">
@@ -88,7 +88,7 @@ function App() {
                 </div>
               }
             >
-                <ComingSoon />
+              <ComingSoon />
             </Suspense>
           </Route>
         </Switch>

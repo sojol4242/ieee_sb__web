@@ -32,7 +32,7 @@ const More_Fac = () => {
                 color: "var(--color-text)",
               }}
             >
-              Executive Committee 22zz
+              Executive Committee 22
             </h1>
             <div className="gradient__bar w-1/5"></div>
           </div>
@@ -52,6 +52,7 @@ const More_Fac = () => {
           <Loader />
         </div>
       )}
+      
     </>
   );
 };

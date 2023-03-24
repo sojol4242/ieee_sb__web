@@ -35,35 +35,18 @@ const About = () => {
 
       <div className="eee__features">
         <Facilities
-          title="EEE Association"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
+          title="What?"
+          text="IEEE, Institute of Electrical and Electronics Engineers is the world's largest nonprofit technical organization with a goal to improve humanity with the resources of electrical and electronic industries. IEEE doesn't work with graduates only. One of its goals is to develop students from their core to innovate and standardize the electrical and electronics industry"
         />
         <Facilities
-          title="Rich Faculty Member"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
-        />
-        <Facilities
-          title="Laboratory"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
-        />
+          title="Why?"
+          text="IEEE was found with the goal to innovate and benefit human society. Working with graduates only doesn't fulfill that goal completely. In order to inspire future generations with the purpose of student, branches were found where students can work with the graduates and learn from them. Student branches were formed with a vision to develop the students for a more innovative and standardized future where they can contribute more for the benefit of human society. Student branches are the place where students get to learn from the experts first hand and nourish themselves.
 
-        <Facilities
-          title="IEEE Student Branch"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
+          Our Achievements"
         />
         <Facilities
-          title="Research Club"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
-        />
-        <Facilities
-          title="Robogang"
-          text=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          aperiam quia officia, repudiandae ex laborum."
+          title="Who?"
+          text="IEEE RUET SB was formed on the purpose of developing humanity with the advancement of technology. This branch consists of energetic members who work hard to promote IEEE among RUET students. IEEE RUET SB reaches out to general students with the benefits of IEEE membership and the goals that IEEE wants to achieve for human society. IEEE RUET SB organizes various events throughout the year in order to help the students. IEEE RUET SB recognizes various events which are wanted by the students to help in their academic life and their mental growth. IEEE RUET SB promotes IEEE and tries to a prominent student branch"
         />
       </div>
       <Stats />
